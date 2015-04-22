@@ -1,0 +1,34 @@
+news:
+    path:     /
+    defaults: { _controller: "AcmeMinticBundle:News:index" }
+
+news_show:
+    path:     /{id}/show
+    defaults: { _controller: "AcmeMinticBundle:News:show" }
+
+news_new:
+    path:     /new
+    defaults: { _controller: "AcmeMinticBundle:News:new" }
+
+news_create:
+    path:     /create
+    defaults: { _controller: "AcmeMinticBundle:News:create" }
+    requirements: { _method: post }
+
+news_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "AcmeMinticBundle:News:edit" }
+
+news_update:
+    path:     /{id}/update
+    defaults: { _controller: "AcmeMinticBundle:News:update" }
+    requirements: { _method: post|put }
+
+news_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "AcmeMinticBundle:News:delete" }
+    requirements: { _method: post|delete }
+news_info:
+    path:     /info
+    defaults: { _controller: "AcmeMinticBundle:News:info" }
+    requirements: { _method: get }

@@ -1,0 +1,47 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>Regions list</h1>
+
+    <table class="records_list">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Regions</th>
+                <th>Towns</th>
+                <th>Cities</th>
+                <th>Departaments</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('regions_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+                <td>{{ entity.regions }}</td>
+                <td>{{ entity.towns }}</td>
+                <td>{{ entity.cities }}</td>
+                <td>{{ entity.departaments }}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('regions_show', { 'id': entity.id }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('regions_edit', { 'id': entity.id }) }}">edit</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('regions_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    {% endblock %}

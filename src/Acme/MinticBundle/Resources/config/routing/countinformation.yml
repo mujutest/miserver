@@ -1,0 +1,30 @@
+countinformation:
+    path:     /
+    defaults: { _controller: "AcmeMinticBundle:CountInformation:index" }
+
+countinformation_show:
+    path:     /{id}/show
+    defaults: { _controller: "AcmeMinticBundle:CountInformation:show" }
+
+countinformation_new:
+    path:     /new
+    defaults: { _controller: "AcmeMinticBundle:CountInformation:new" }
+
+countinformation_create:
+    path:     /create
+    defaults: { _controller: "AcmeMinticBundle:CountInformation:create" }
+    requirements: { _method: post }
+
+countinformation_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "AcmeMinticBundle:CountInformation:edit" }
+
+countinformation_update:
+    path:     /{id}/update
+    defaults: { _controller: "AcmeMinticBundle:CountInformation:update" }
+    requirements: { _method: post|put }
+
+countinformation_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "AcmeMinticBundle:CountInformation:delete" }
+    requirements: { _method: post|delete }

@@ -1,0 +1,44 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>Filter</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ entity.id }}</td>
+            </tr>
+            <tr>
+                <th>Count</th>
+                <td>{{ entity.count }}</td>
+            </tr>
+            <tr>
+                <th>Money</th>
+                <td>{{ entity.money }}</td>
+            </tr>
+            <tr>
+                <th>Percentage</th>
+                <td>{{ entity.percentage }}</td>
+            </tr>
+            <tr>
+                <th>Points</th>
+                <td>{{ entity.points }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('filter') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('filter_edit', { 'id': entity.id }) }}">
+            Edit
+        </a>
+    </li>
+    <li>{{ form(delete_form) }}</li>
+</ul>
+{% endblock %}

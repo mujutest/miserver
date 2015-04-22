@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/opt/lampp/htdocs/MinticServer/src/Acme/MinticBundle/Controller/CallsController.php</file>
+            <file>file:/opt/lampp/htdocs/MinticServer/src/Acme/MinticBundle/Entity/Filter.php</file>
+            <file>file:/opt/lampp/htdocs/MinticServer/src/Acme/MinticBundle/Entity/CountInformation.php</file>
+            <file>file:/opt/lampp/htdocs/MinticServer/src/Acme/MinticBundle/Resources/config/routing.yml</file>
+            <file>file:/opt/lampp/htdocs/MinticServer/src/Acme/MinticBundle/Controller/UserController.php</file>
+            <file>file:/opt/lampp/htdocs/MinticServer/src/Acme/MinticBundle/Resources/config/routing/calls.yml</file>
+            <file>file:/opt/lampp/htdocs/MinticServer/src/Acme/MinticBundle/Entity/User.php</file>
+            <file>file:/opt/lampp/htdocs/MinticServer/src/Acme/MinticBundle/Controller/FilterController.php</file>
+            <file>file:/opt/lampp/htdocs/MinticServer/src/Acme/MinticBundle/Entity/CallAditionalInfo.php</file>
+        </group>
+    </open-files>
+</project-private>

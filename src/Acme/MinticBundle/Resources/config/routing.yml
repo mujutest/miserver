@@ -1,0 +1,40 @@
+acme_mintic_regions:
+    resource: "@AcmeMinticBundle/Resources/config/routing/regions.yml"
+    prefix:   /regions
+
+acme_mintic_countinformation:
+    resource: "@AcmeMinticBundle/Resources/config/routing/countinformation.yml"
+    prefix:   /countinformation
+
+acme_mintic_calladitionalinfo:
+    resource: "@AcmeMinticBundle/Resources/config/routing/calladitionalinfo.yml"
+    prefix:   /calladitionalinfo
+
+acme_mintic_usercall:
+    resource: "@AcmeMinticBundle/Resources/config/routing/usercall.yml"
+    prefix:   /usercall
+
+acme_mintic_callinfo:
+    resource: "@AcmeMinticBundle/Resources/config/routing/callinfo.yml"
+    prefix:   /callinfo
+
+
+acme_mintic_users:
+    resource: "@AcmeMinticBundle/Resources/config/routing/user.yml"
+    prefix:   /users
+
+acme_mintic_filter:
+    resource: "@AcmeMinticBundle/Resources/config/routing/filter.yml"
+    prefix:   /filter
+
+acme_mintic_news:
+    resource: "@AcmeMinticBundle/Resources/config/routing/news.yml"
+    prefix:   /news
+
+acme_mintic_calls:
+    resource: "@AcmeMinticBundle/Resources/config/routing/calls.yml"
+    prefix:   /calls
+
+acme_mintic_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: AcmeMinticBundle:Default:index }

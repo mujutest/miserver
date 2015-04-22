@@ -1,0 +1,30 @@
+usercall:
+    path:     /
+    defaults: { _controller: "AcmeMinticBundle:UserCall:index" }
+
+usercall_show:
+    path:     /{id}/show
+    defaults: { _controller: "AcmeMinticBundle:UserCall:show" }
+
+usercall_new:
+    path:     /new
+    defaults: { _controller: "AcmeMinticBundle:UserCall:new" }
+
+usercall_create:
+    path:     /create
+    defaults: { _controller: "AcmeMinticBundle:UserCall:create" }
+    requirements: { _method: post }
+
+usercall_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "AcmeMinticBundle:UserCall:edit" }
+
+usercall_update:
+    path:     /{id}/update
+    defaults: { _controller: "AcmeMinticBundle:UserCall:update" }
+    requirements: { _method: post|put }
+
+usercall_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "AcmeMinticBundle:UserCall:delete" }
+    requirements: { _method: post|delete }

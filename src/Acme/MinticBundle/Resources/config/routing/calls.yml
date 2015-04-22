@@ -1,0 +1,44 @@
+calls:
+    path:     /
+    defaults: { _controller: "AcmeMinticBundle:Calls:index" }
+
+calls_show:
+    path:     /{id}/show
+    defaults: { _controller: "AcmeMinticBundle:Calls:show" }
+
+calls_new:
+    path:     /new
+    defaults: { _controller: "AcmeMinticBundle:Calls:new" }
+
+calls_create:
+    path:     /create
+    defaults: { _controller: "AcmeMinticBundle:Calls:create" }
+    requirements: { _method: post }
+
+calls_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "AcmeMinticBundle:Calls:edit" }
+
+calls_update:
+    path:     /{id}/update
+    defaults: { _controller: "AcmeMinticBundle:Calls:update" }
+    requirements: { _method: post|put }
+
+calls_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "AcmeMinticBundle:Calls:delete" }
+    requirements: { _method: post|delete }
+    
+calls_regions:
+    path:     /regions
+    defaults: { _controller: "AcmeMinticBundle:Calls:regions" }
+    requirements: { _method: get }
+    
+calls_info:
+    path:     /info
+    defaults: { _controller: "AcmeMinticBundle:Calls:info" }
+    requirements: { _method: get }
+calls_infoid:
+    path:     /{id_call}/info
+    defaults: { _controller: "AcmeMinticBundle:Calls:infoid" }
+    requirements: { _method: get }       

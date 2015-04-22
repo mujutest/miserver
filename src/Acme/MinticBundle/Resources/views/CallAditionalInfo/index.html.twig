@@ -1,0 +1,57 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>CallAditionalInfo list</h1>
+
+    <table class="records_list">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Call_id</th>
+                <th>Condone</th>
+                <th>Credit</th>
+                <th>Lefts</th>
+                <th>Paid</th>
+                <th>Recomendations</th>
+                <th>Cc</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('calladitionalinfo_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+                <td>{{ entity.callid }}</td>
+                <td>{{ entity.condone }}</td>
+                <td>{{ entity.credit }}</td>
+                <td>{{ entity.lefts }}</td>
+                <td>{{ entity.paid }}</td>
+                <td>
+                    {% for key, value in entity.recomendations %} 
+                        <p>{{ value }}.</p>
+                    {% endfor %}</td>
+                <td>
+                <td>{{ entity.cc }}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('calladitionalinfo_show', { 'id': entity.id }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('calladitionalinfo_edit', { 'id': entity.id }) }}">edit</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('calladitionalinfo_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    {% endblock %}

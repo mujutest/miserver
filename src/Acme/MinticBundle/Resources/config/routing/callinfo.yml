@@ -1,0 +1,30 @@
+callinfo:
+    path:     /
+    defaults: { _controller: "AcmeMinticBundle:CallInfo:index" }
+
+callinfo_show:
+    path:     /{id}/show
+    defaults: { _controller: "AcmeMinticBundle:CallInfo:show" }
+
+callinfo_new:
+    path:     /new
+    defaults: { _controller: "AcmeMinticBundle:CallInfo:new" }
+
+callinfo_create:
+    path:     /create
+    defaults: { _controller: "AcmeMinticBundle:CallInfo:create" }
+    requirements: { _method: post }
+
+callinfo_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "AcmeMinticBundle:CallInfo:edit" }
+
+callinfo_update:
+    path:     /{id}/update
+    defaults: { _controller: "AcmeMinticBundle:CallInfo:update" }
+    requirements: { _method: post|put }
+
+callinfo_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "AcmeMinticBundle:CallInfo:delete" }
+    requirements: { _method: post|delete }

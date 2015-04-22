@@ -1,0 +1,60 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>CallAditionalInfo</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ entity.id }}</td>
+            </tr>
+            <tr>
+                <th>Call_id</th>
+                <td>{{ entity.callid }}</td>
+            </tr>
+            <tr>
+                <th>Condone</th>
+                <td>{{ entity.condone }}</td>
+            </tr>
+            <tr>
+                <th>Credit</th>
+                <td>{{ entity.credit }}</td>
+            </tr>
+            <tr>
+                <th>Lefts</th>
+                <td>{{ entity.lefts }}</td>
+            </tr>
+            <tr>
+                <th>Paid</th>
+                <td>{{ entity.paid }}</td>
+            </tr>
+            <tr>
+                <th>Recomendations</th>
+                <td>
+                    {% for key, value in entity.recomendations %} 
+                        <p>{{ value }}.</p>
+                    {% endfor %}</td>
+                <td>
+            </tr>
+            <tr>
+                <th>Cc</th>
+                <td>{{ entity.cc }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul class="record_actions">
+        <li>
+            <a href="{{ path('calladitionalinfo') }}">
+                Back to the list
+            </a>
+        </li>
+        <li>
+            <a href="{{ path('calladitionalinfo_edit', { 'id': entity.id }) }}">
+                Edit
+            </a>
+        </li>
+        <li>{{ form(delete_form) }}</li>
+    </ul>
+{% endblock %}

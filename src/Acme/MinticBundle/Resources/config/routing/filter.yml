@@ -1,0 +1,35 @@
+filter:
+    path:     /
+    defaults: { _controller: "AcmeMinticBundle:Filter:index" }
+
+filter_show:
+    path:     /{id}/show
+    defaults: { _controller: "AcmeMinticBundle:Filter:show" }
+
+filter_new:
+    path:     /new
+    defaults: { _controller: "AcmeMinticBundle:Filter:new" }
+
+filter_create:
+    path:     /create
+    defaults: { _controller: "AcmeMinticBundle:Filter:create" }
+    requirements: { _method: post }
+
+filter_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "AcmeMinticBundle:Filter:edit" }
+
+filter_update:
+    path:     /{id}/update
+    defaults: { _controller: "AcmeMinticBundle:Filter:update" }
+    requirements: { _method: post|put }
+
+filter_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "AcmeMinticBundle:Filter:delete" }
+    requirements: { _method: post|delete }
+
+filter_info:
+    path:     /info
+    defaults: { _controller: "AcmeMinticBundle:Filter:info" }
+    requirements: { _method: post }  

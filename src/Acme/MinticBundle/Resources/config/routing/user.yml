@@ -1,0 +1,45 @@
+users:
+    path:     /
+    defaults: { _controller: "AcmeMinticBundle:User:index" }
+
+users_show:
+    path:     /{id}/show
+    defaults: { _controller: "AcmeMinticBundle:User:show" }
+
+users_new:
+    path:     /new
+    defaults: { _controller: "AcmeMinticBundle:User:new" }
+
+users_create:
+    path:     /create
+    defaults: { _controller: "AcmeMinticBundle:User:create" }
+    requirements: { _method: post }
+
+users_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "AcmeMinticBundle:User:edit" }
+
+users_update:
+    path:     /{id}/update
+    defaults: { _controller: "AcmeMinticBundle:User:update" }
+    requirements: { _method: post|put }
+
+users_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "AcmeMinticBundle:User:delete" }
+    requirements: { _method: post|delete }
+    
+users_token:
+    path:     /token
+    defaults: { _controller: AcmeMinticBundle:User:token }
+    methods: [POST]
+    
+users_calls:
+    path:     /calls
+    defaults: { _controller: AcmeMinticBundle:User:calls }
+    methods: [GET]   
+    
+users_info:
+    path:     /info
+    defaults: { _controller: AcmeMinticBundle:User:info }
+    methods: [GET]       
